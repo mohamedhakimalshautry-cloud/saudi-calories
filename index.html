@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة السعرات السعودية | احسب وجبتك في دقيقة</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .emoji {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .price-box {
+            background: #f8f9fa;
+            border: 2px dashed #667eea;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .price {
+            font-size: 3em;
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .currency {
+            font-size: 0.5em;
+            color: #666;
+        }
+        
+        .features {
+            margin: 30px 0;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
+        .feature-icon {
+            font-size: 1.5em;
+            margin-left: 15px;
+        }
+        
+        .cta-button {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: bold;
+            border-radius: 50px;
+            margin: 30px 0;
+            transition: transform 0.3s;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+        }
+        
+        .whatsapp-btn:hover {
+            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
+        }
+        
+        .trust {
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+        
+        .steps {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        
+        .step {
+            display: flex;
+            margin: 10px 0;
+            align-items: center;
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        
+        .disclaimer {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 0.85em;
+            color: #856404;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 { font-size: 1.5em; }
+            .price { font-size: 2.5em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="emoji">🍽️</div>
+            <h1>حاسبة السعرات السعودية</h1>
+            <p>أحسب لك سعرات وجبتك السعودية المفضلة في دقيقة واحدة</p>
+        </div>
+        
+        <div class="content">
+            <div class="price-box">
+                <p style="margin-bottom: 10px; color: #666;">تكلفة الحساب الواحد</p>
+                <div class="price">
+                    20 <span class="currency">ريال فقط</span>
+                </div>
+                <p style="color: #666; font-size: 0.9em;">أو ما يعادل 5 دولار</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">📸</span>
+                    <div>
+                        <strong>أرسل صورة الأكل</strong>
+                        <p style="color: #666; font-size: 0.9em;">صور وجبتك (كبسة، مندي، شاورما) وأرسلها واتساب</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <span class="feature-icon">⚡</span>
+                    <div>
+                        <strong>رد فوري خلال دقيقة</strong>
+                        <p style="color: #666; font-size: 0.9em;">أحسب لك السعرات والبروتين والكارbs بدقة</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <span class="feature-icon">📊</span>
+                    <div>
+                        <strong>تقرير كامل</strong>
+                        <p style="color: #666; font-size: 0.9em;">جدول بالسعرات + نصائح لتقليل السعرات بنفس الطعم</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="steps">
+                <h3 style="margin-bottom: 15px; text-align: center;">كيف تطلب الخدمة؟</h3>
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <p>اضغط زر واتساب بالأسفل</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <p>أرسل صورة الوجبة + وزنك وطولك (اختياري)</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <p>حول 20 ريال (STC Pay أو تحويل بنكي) واستلم التقرير</p>
+                </div>
+            </div>
+            
+            <a href="https://wa.me/967779791856?text=السلام عليكم، أريد حساب سعرات وجبتي" class="cta-button whatsapp-btn">
+                💬 اطلب عبر واتساب الآن
+            </a>
+            
+            <a href="https://t.me/mohamed hakim" class="cta-button" style="background: #0088cc; box-shadow: 0 10px 30px rgba(0, 136, 204, 0.3);">
+                📱 اطلب عبر تيليجرام
+            </a>
+            
+            <p class="trust">
+                ✅ دفع آمن | ✅ رد سريع | ✅ خصوصية تامة
+            </p>
+            
+            <div class="disclaimer">
+                ⚠️ <strong>تنويه:</strong> هذه الخدمة استشارية تعليمية فقط وليست استشارة طبية. 
+                للحالات الصحية الخاصة يرجى مراجعة أخصائي تغذية.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
